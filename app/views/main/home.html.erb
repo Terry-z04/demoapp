@@ -1,2 +1,10 @@
-<h1>Main#home</h1>
-<p>Find me in app/views/main/home.html.erb</p>
+<div class="container-fluid">
+  <h1>Main#home</h1>
+  <p>Find me in app/views/main/home.html.erb</p>
+  <h3>Categories</h3>
+  <% @categories.each do |category| %>
+    <%= category.id %>
+    <%= category.name %>
+    <hr>
+  <% end %>
+</div>
